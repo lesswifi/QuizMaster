@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+    <title>Duke Basketball Quiz 2</title>
+    <genre>Sports</genre>
+    <question>
+        <text>Who is Duke's head coach?</text>
+        <difficulty>0</difficulty>
+        <correctanswer>Coach K</correctanswer>
+        <wronganswer>Coach Z</wronganswer>
+    </question>
+    <question>
+        <text>What year did Duke win the national title?</text>
+        <difficulty>1</difficulty>
+        <correctanswer>2010</correctanswer>
+        <wronganswer>1999</wronganswer>
+        <wronganswer>1986</wronganswer>
+    </question>
+    <question>
+        <text>Who is Duke's all-time leading scorer?</text>
+        <difficulty>2</difficulty>
+        <correctanswer>JJ Redick</correctanswer>
+        <wronganswer>Shane Battier</wronganswer>
+        <wronganswer>Grant Hill</wronganswer>
+        <wronganswer>Johnny Dawkins</wronganswer>
+    </question>
+</quiz>

@@ -1,0 +1,107 @@
+Project 1 Stage One
+
+QuizMaster was created by Fangge Deng and Harrison Lundberg.
+
+QuizMaster begins by launching the MainActivity, which presents the user with a list of available
+quizzes to be played. After clicking on one of these options, GameActivity is started and the selected
+quiz is begun. The user answers one question at a time by clicking on the correct answer out of
+a list of possible answers to the question. While playing the quiz, the current score and number
+of remaining questions is kept up to date. Upon completing all of the questions, the user is taken
+to FinalActivity, which tells the final score the user got, and presents the user with the option
+to return to the Main Menu. While playing a quiz, the user can quit the app. The current state is
+saved in SharedPreferences so that when the user restarts the app and goes to the main menu, there
+is now a "continue" button which allows to the user to continue the previously started quiz from
+wherever they left off.
+
+
+GOALS THAT HAVE BEEN ACHIEVED:
+We first completed all of the required criteria for stage 1:
+Our app supports both the XML format given in class, as well as our custom JSON quiz format using
+the JSONQuizParser and XMLQuizParser classes. The local quizzes are stored in the assets/quizzes
+directory.
+
+Our app correctly saves the user's progress in the current quiz across killing the app and
+restarting the phone by using SharedPreferences.
+
+Our app also supports quizzes with different kinds of answers by using the Answer class and
+the AnswersAdapter. The images for answers are stored locally in the drawable directory.
+
+Our app supports questions with a variable number of answers by using a ListView.
+
+Additionally:
+Our app can access quizzes stored remotely by allowing the user to enter a url of a quiz.
+This quiz is then fetched by Volley and is added to the available list of quizzes.
+Furthermore, we used Glide to support fetching images from urls.
+
+We have created three JSON quizzes stored on the internet, and they can be found at the following
+urls:
+http://people.duke.edu/~hgl2/remoteDukeQuiz.json
+http://people.duke.edu/~hgl2/remoteUSQuiz.json
+http://people.duke.edu/~hgl2/remoteWorldQuiz.json
+
+Our main menu now allows the user to first select the genre of quiz they wish to play, rather
+than simply listing out all of the available quizzes.
+
+
+
+
+Explanation of warnings in AndroidStudio's Code Analysis:
+
+"Hardcoded string" - Currently we have our strings hardcoded into the layout xml files, but in the
+future we could change this to a string resource, so that we could easily swap out the strings to
+another language.
+
+"Implicitly using the default locale" - We were told in class that we did not have to worry about
+using the default locale at the moment.
+
+"Missing commit() on SharedPreference editor" - This message is recommending that we use apply()
+rather than commit() when writing changes to SharedPreferences.
+
+"Field can be local" - There are three instance variables which could currently be converted
+to local variables because they are each only used in one method. However, we anticipate writing
+new methods in the future which will also need these values, so we decide to leave them as
+instance variables.
+
+"Unchecked call to ..." - There are currently two calls to Adapter methods which the compiler says
+are unchecked. However, these do not affect the correctness of our application.
+
+"Access can be package local" - We receive this error on our two classes Question and QuizGenerator.
+This means that we could change the visibility of these classes to package local instead of public
+to increase encapsulation, because no class outside of our package is currently using these two
+classes. However, it is possible that in the future we may want to reuse our Question and
+QuizGenerator classes outside of the QuizMaster app, therefore we have decided to keep these
+two classes public.
+
+
+
+"Declaration can have final modifier" - We receive these warnings in the Question class where we
+could declare the question statement and answers as final, because at this point they are never
+changed once initialized. However, we cannot at this time rule out the possibility of dynamically
+changing one or more of these values at runtime, therefore, we leave out the final modifier. This
+error also appears in QuizGenerator where we could make the List of Questions final, but in the
+future we may want to include the ability to dynamically add questions to a given quiz, so we
+exclude the final modifier.
+
+"Unused method parameters" - These warnings are present in all of our activity classes with the
+onButtonClick methods. The reason is that we never actually use the View parameter which is passed
+in, however Android requires that the signatures of these methods include the View parameter.
+
+
+"R.mipmap.ic_launcher not used" - This error appears because we created our own icon, which means
+we no longer use the default image. However, we did not want to delete the default one just
+in case we need it in the future.
+
+"Buttons in button bars should be borderless" - We at first followed AndroidStudio's suggestion
+of removing the borders from the buttons, however, it changed the appearance of our app, and we
+preferred the original look. Therefore, we decided to keep the borders on the buttons.
+
+In addition, there are some Warnings in the Code Analysis that seemed out of our control at this
+point in time. These warnings include "Consider adding the attribute 'android:fullBackupContent'
+to specify an @xml resource which configures which files to back up", "Missing support for
+Firebase App Indexing", a missing return statement in the build.gradle file, and an unused property
+in the gradle.properties file.
+
+Finally, we receive some spelling warnings, but these are all warnings about text in our comments,
+where we use words such as "quizmaster", which isn't technically a word.
+
+

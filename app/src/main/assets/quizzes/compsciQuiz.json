@@ -1,0 +1,34 @@
+{
+  "title": "Computer Science Quiz",
+  "genre": "CS",
+  "questions": [
+    {
+      "text": "Who teaches CompSci 290.3?",
+      "correctanswer": {"text": "Ola", "type": "string"},
+      "wronganswers": [
+        {"text": "Fangge", "type": "string"}, {"text": "Coach", "type": "string"},
+        {"text": "coachk", "type": "image"}
+      ]
+    },
+    {
+      "text": "Which of the following is not a programming language?",
+      "correctanswer": {"text": "Arabic", "type": "string"},
+      "wronganswers": [
+        {"text": "Java", "type": "string"}, {"text": "Python", "type": "string"}
+      ]
+    }, {
+      "text": "Which of the following is not a data structure?",
+      "correctanswer": {"text": "Bug", "type": "string"},
+      "wronganswers": [
+        {"text": "Queue", "type": "string"}, {"text": "Stack", "type": "string"},
+        {"text": "Array", "type": "string"}, {"text": "Map", "type": "string"}
+      ]
+    }, {
+      "text": "The brain of any computer system is",
+      "correctanswer": {"text": "CPU", "type": "string"},
+      "wronganswers": [
+        {"text": "ALU", "type": "string"}, {"text": "Memory", "type": "string"}
+      ]
+    }
+  ]
+}

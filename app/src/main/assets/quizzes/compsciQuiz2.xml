@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+    <title>Computer Science Quiz 2</title>
+    <genre>CS</genre>
+    <question>
+        <text>Who teaches CompSci 290.3?</text>
+        <difficulty>1</difficulty>
+        <correctanswer>Ola</correctanswer>
+        <wronganswer>Fangge</wronganswer>
+    </question>
+    <question>
+        <text>How many students are in a group?</text>
+        <difficulty>1</difficulty>
+        <correctanswer>4</correctanswer>
+        <wronganswer>3</wronganswer>
+        <wronganswer>2</wronganswer>
+    </question>
+    <question>
+        <text>Which of the following is not a programming language</text>
+        <difficulty>2</difficulty>
+        <correctanswer>Arabic</correctanswer>
+        <wronganswer>Python</wronganswer>
+        <wronganswer>Java</wronganswer>
+        <wronganswer>C++</wronganswer>
+    </question>
+    <question>
+        <text>Which of the following is not a data structure?</text>
+        <difficulty>2</difficulty>
+        <correctanswer>Stack</correctanswer>
+        <wronganswer>Queue</wronganswer>
+        <wronganswer>List</wronganswer>
+        <wronganswer>Bug</wronganswer>
+    </question>
+    <question>
+        <text>What is a VM</text>
+        <difficulty>2</difficulty>
+        <correctanswer>Arabic</correctanswer>
+        <wronganswer>Python</wronganswer>
+        <wronganswer>Java</wronganswer>
+        <wronganswer>C++</wronganswer>
+    </question>
+</quiz>

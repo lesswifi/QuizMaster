@@ -1,0 +1,34 @@
+{
+  "title": "College Quiz",
+  "genre": "College",
+  "questions": [
+    {
+      "text": "When was Trinity college founded?",
+      "correctanswer": {"text": "1838", "type": "string"},
+      "wronganswers": [
+        {"text": "1840", "type": "string"}, {"text": "1910", "type": "string"},
+        {"text": "1810", "type": "string"}, {"text": "1825", "type": "string"}
+      ]
+    }, {
+      "text": "What is the oldest university in the United States?",
+      "correctanswer": {"text": "Harvard University", "type": "string"},
+      "wronganswers": [
+        {"text": "Duke University", "type": "string"}, {"text": "Yale University", "type": "string"}
+      ]
+    }, {
+      "text": "Which of the following is Duke's logo?",
+      "correctanswer": {"text": "http:/people.duke.edu/~hgl2/dukelogo.png", "type": "imageUrl"},
+      "wronganswers": [
+        {"text": "syracuselogo", "type": "image"}, {"text": "notredamelogo", "type": "image"}, {"text": "None of these", "type": "string"}
+      ]
+    },
+    {
+      "text": "Which pic is snowy?",
+      "correctanswer": {"text": "pic2_tn", "type": "image"},
+      "wronganswers": [
+        {"text": "pic1_tn", "type": "image"},
+        {"text": "pic3_tn", "type": "image"}
+      ]
+    }
+  ]
+}

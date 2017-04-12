@@ -1,0 +1,40 @@
+{
+  "title": "Duke Basketball Quiz",
+  "genre": "Sports",
+  "questions": [
+    {
+      "text": "How many national championships has Duke won?",
+      "correctanswer": {"type": "string", "text": "5"},
+      "wronganswers": [
+        {"type": "string", "text": "7"}, {"type": "string", "text": "10"}, {"type": "string", "text": "2"}
+      ]
+    },
+    {
+      "text": "When did Duke win its first national championship?",
+      "correctanswer": {"type": "string", "text": "1991"},
+      "wronganswers": [
+        {"type": "string", "text": "2011"},
+        {"type": "string", "text": "1994"},
+        {"type": "string", "text": "1776"}
+      ]
+    },
+    {
+      "text": "How old is Coach K?",
+      "correctanswer": {"type": "string", "text": "70"},
+      "wronganswers": [
+        {"type": "string", "text": "72"},
+        {"type": "string", "text": "69"},
+        {"type": "string", "text": "14"},
+        {"type": "string", "text": "27"},
+        {"type": "string", "text": "65"}
+      ]
+    }, {
+      "text": "Which of the following is Coach K?",
+      "correctanswer": {"text": "coachk", "type": "image"},
+      "wronganswers": [
+        {"text": "mikebrey", "type": "image"}, {"text": "boeheim", "type": "image"}, {"text": "None of these", "type": "image"}
+      ]
+    }
+
+  ]
+}
